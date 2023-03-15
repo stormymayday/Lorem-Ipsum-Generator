@@ -32,7 +32,7 @@ form.addEventListener('submit', function (event) {
     // Random number between 0 and 8
     const random = Math.floor(Math.random() * text.length);
 
-    if (isNaN(value) || value < 0 || value > 9) {
+    if (isNaN(value) || value <= 0 || value > 9) {
         // Displaying one paragraph if the value is:
         // 1. NaN (The number input is empty)
         // 2. A negative integer
