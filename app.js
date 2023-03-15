@@ -28,8 +28,13 @@ form.addEventListener('submit', function (event) {
     // Accessing the 'amount' value and converting it to an integer
     // Gotcha: All inputs return a string by default
     const value = parseInt(amount.value);
-    console.log(typeof value);
 
-
+    // Displaying one paragraph if the value is:
+    // 1. NaN (The number input is empty)
+    // 2. A negative integer
+    // 3. Is greater that 9 (length of the text array)
+    if (isNaN(value) || value < 0 || value > 9) {
+        result.innerHTML = `<p class='result'>${text[0]}</p>`;
+    }
 
 });
