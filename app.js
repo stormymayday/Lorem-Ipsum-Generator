@@ -42,11 +42,12 @@ form.addEventListener('submit', function (event) {
         // If the value is between 1 and 9
         let tempText = text.slice(0, value);
 
+        // Iterating through the array wrapping each item inside the <p> tags 
         tempText = tempText.map(function (paragraph) {
 
             return `<p class='result'>${paragraph}</p>`;
 
-        });
+        }).join("");
     }
 
 });
