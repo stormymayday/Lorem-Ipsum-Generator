@@ -29,6 +29,10 @@ form.addEventListener('submit', function (event) {
     // Gotcha: All inputs return a string by default
     const value = parseInt(amount.value);
 
+    // Random number between 0 and 8
+    const random = Math.floor(Math.random() * text.length);
+    console.log(random);
+
     // Displaying one paragraph if the value is:
     // 1. NaN (The number input is empty)
     // 2. A negative integer
