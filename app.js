@@ -38,6 +38,10 @@ form.addEventListener('submit', function (event) {
         // 2. A negative integer
         // 3. Is greater that 9 (length of the text array)
         result.innerHTML = `<p class='result'>${text[random]}</p>`;
+    } else {
+        // If the value is between 1 and 9
+        let tempText = text.slice(0, value);
+        console.log(tempText);
     }
 
 });
