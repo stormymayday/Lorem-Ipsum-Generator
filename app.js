@@ -25,5 +25,10 @@ form.addEventListener('submit', function (event) {
     // Preventing default form behaviour (submitting to a server)
     event.preventDefault();
 
+    // Accesing 'amount' value
+    const value = amount.value;
+    console.log(value);
+
+
 
 });
