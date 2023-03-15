@@ -22,4 +22,8 @@ const result = document.querySelector('.lorem-text');
 // Listening for the submit event
 form.addEventListener('submit', function (event) {
 
+    // Preventing default form behaviour (submitting to a server)
+    event.preventDefault();
+
+
 });
