@@ -25,9 +25,10 @@ form.addEventListener('submit', function (event) {
     // Preventing default form behaviour (submitting to a server)
     event.preventDefault();
 
-    // Accesing 'amount' value
-    const value = amount.value;
-    console.log(value);
+    // Accessing the 'amount' value and converting it to an integer
+    // Gotcha: All inputs return a string by default
+    const value = parseInt(amount.value);
+    console.log(typeof value);
 
 
 
