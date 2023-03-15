@@ -48,6 +48,9 @@ form.addEventListener('submit', function (event) {
             return `<p class='result'>${paragraph}</p>`;
 
         }).join("");
+
+        // Displaying the paragraphs
+        result.innerHTML = tempText;
     }
 
 });
